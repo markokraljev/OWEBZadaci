@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Formula 1';
+    src: url('Formula1-Regular_font.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Formula 1', sans-serif;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.f1logo {
+   width: 700px;
+   position: absolute;
+   left: 50%;        
+   top: 0; 
+   transform: translateX(-50%);
+   z-index: 10;
+}
+
+h2 {
+    position: absolute;
+    top: 80px;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: aliceblue;
+}
+
+table {
+    width: 85%;
+    margin: 200px auto 40px auto;
+    border-collapse: collapse;
+    background-color: aliceblue; 
+    z-index: 10;
+    position: relative;
+}
+
+th, td {
+    border: 0.25px solid #fafafa; 
+    padding: 8px 12px;
+    text-align: center;   
+    vertical-align: middle;      
+}
+
+th {
+    background-color: #202020;
+    color: white;
+    font-size: 16px;
+}
+
+.position {
+    background-color: #202020;  
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    width: 80px;
+}
+
+caption {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+/* Kelija za vozac */
+.driver-cell {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+    padding: 5px 12px;
+}
+
+/* Logo na timot */
+.team-logo {
+    width: 35px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Slika na vozac */
+.driver-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Boi i stil na vozacite */
+.verstappen { background-color: #0600ef; color: aliceblue; font-weight: bold; }
+.piastri { background-color: #ff8700; color: aliceblue; font-weight: bold; }   
+.antonelli { background-color: #00d2be; color: #000000; font-weight: bold; } 
+.hamilton, .leclerc { background-color: #dc0000; color: aliceblue; font-weight: bold; } 
+.hulkenberg { background-color: #000000; color: aliceblue; font-weight: bold; } 
+.alonso, .stroll { background-color: #006f62; color: aliceblue; font-weight: bold; }
+.gasly { background-color: #0090ff; color: aliceblue; font-weight: bold; }      
+.sainz { background-color: #64c4ff; color: #000000; font-weight: bold; }
+
+#simulate-btn {
+    background-color: #e10600; /* F1 Crvena boja */
+    color: white;
+    font-family: 'Formula 1', sans-serif;
+    padding: 12px 28px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    position: relative;
+    transition: background-color 0.2s;
+}
+
+#simulate-btn:hover {
+    background-color: #ff1e00;
+}
+
+#lap-counter {
+    position: absolute;
+    top: 190px;
+    right: 10%;
+    z-index: 10;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: bold;
+}

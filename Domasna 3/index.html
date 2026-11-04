@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <img src="F1Logo.png" alt="F1 Logo" class="f1logo">
+        <h2>Welcome to the Formula 1 Table Simulation Game!</h2>
+
+    <table>
+        <caption>Driver Table</caption>
+        <thead>
+            <tr>
+                <th>Position</th>
+                <th>Driver</th>
+                <th>Team</th>
+                <th>Lap Time</th>
+                <th>Tires</th>
+                <th>Lap Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="position">1</td>
+                <td class="driver-cell verstappen">
+                    <img src="redbull-logo.png" alt="Red Bull" class="team-logo">
+                    <img src="max_supermax.png" alt="Max Verstappen" class="driver-img">
+                    <span>Verstappen</span>
+                </td>
+                <td>Red Bull</td>
+                <td>0:00.000</td>
+                <td>Medium</td>
+                <td>Waiting</td>
+            </tr>
+
+            <tr>
+                <td class="position">2</td>
+                <td class="driver-cell piastri">
+                    <img src="mclaren-logo.png" alt="McLaren" class="team-logo">
+                    <img src="oscar_piastri.png" alt="Oscar Piastri" class="driver-img">
+                    <span>Piastri</span>
+                </td>
+                <td>McLaren</td>
+                <td>0:00.000</td>
+                <td>Medium</td>
+                <td>Waiting</td>
+            </tr>
+
+            <tr>
+                <td class="position">3</td>
+                <td class="driver-cell antonelli">
+                    <img src="mercedes-logo.png" alt="Mercedes" class="team-logo">
+                    <img src="kimi.png" alt="Kimi Antonelli" class="driver-img">
+                    <span>Antonelli</span>
+                </td>
+                <td>Mercedes</td>
+                <td>0:00.000</td>
+                <td>Medium</td>
+                <td>Waiting</td>
+            </tr>
+
+            <tr>
+                <td class="position">4</td>
+                <td class="driver-cell hamilton">
+                    <img src="ferrari-logo.png" alt="Ferrari" class="team-logo">
+                    <img src="lewis_hamilton.png" alt="Lewis Hamilton" class="driver-img">
+                    <span>Hamilton</span>
+                </td>
+                <td>Ferrari</td>
+                <td>0:00.000</td>
+                <td>Medium</td>
+                <td>Waiting</td>
+            </tr>
+
+            <tr>
+                <td class="position">5</td>
+                <td class="driver-cell leclerc">
+                    <img src="ferrari-logo.png" alt="Ferrari" class="team-logo">
+                    <img src="charcles leclerc.png" alt="Charles Leclerc" class="driver-img">
+                    <span>Leclerc</span>
+                </td>
+                <td>Ferrari</td>
+                <td>0:00.000</td>
+                <td>Medium</td>
+                <td>Waiting</td>
+            </tr>
+
+            <tr>
+                <td class="position">6</td>
+                <td class="driver-cell hulkenberg">
+                    <img src="audi-logo.png" alt="Audi" class="team-logo">
+                    <img src="hulkenberg.png" alt="Nico Hulkenberg" class="driver-img">
+                    <span>Hulkenberg</span>
+                </td>
+                <td>Audi</td>
+                <td>0:00.000</td>
+                <td>Medium</td>
+                <td>Waiting</td>
+            </tr>
+
+            <tr>
+                <td class="position">7</td>
+                <td class="driver-cell alonso">
+                    <img src="astonmartin-logo.png" alt="Aston Martin" class="team-logo">
+                    <img src="fernando_alonso.png" alt="Fernando Alonso" class="driver-img">
+                    <span>Alonso</span>
+                </td>
+                <td>Aston Martin</td>
+                <td>0:00.000</td>
+                <td>Medium</td>
+                <td>Waiting</td>
+            </tr>
+
+            <tr>
+                <td class="position">8</td>
+                <td class="driver-cell gasly">
+                    <img src="alpine-logo.png" alt="Alpine" class="team-logo">
+                    <img src="pierre.png" alt="Pierre Gasly" class="driver-img">
+                    <span>Gasly</span>
+                </td>
+                <td>Alpine</td>
+                <td>0:00.000</td>
+                <td>Medium</td>
+                <td>Waiting</td>
+            </tr>
+
+            <tr>
+                <td class="position">9</td>
+                <td class="driver-cell sainz">
+                    <img src="williams-logo.png" alt="Williams" class="team-logo">
+                    <img src="smooth_operator.png" alt="Carlos Sainz" class="driver-img">
+                    <span>Sainz</span>
+                </td>
+                <td>Williams</td>
+                <td>0:00.000</td>
+                <td>Medium</td>
+                <td>Waiting</td>
+            </tr>
+
+            <tr>
+                <td class="position">10</td>
+                <td class="driver-cell stroll">
+                    <img src="astonmartin-logo.png" alt="Aston Martin" class="team-logo">
+                    <img src="lance_stroll.png" alt="Lance Stroll" class="driver-img">
+                    <span>Stroll</span>
+                </td>
+                <td>Aston Martin</td>
+                <td>0:00.000</td>
+                <td>Medium</td>
+                <td>Waiting</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style="text-align: center; margin: -20px 0 40px 0; z-index: 10; position: relative;">
+    <button id="simulate-btn">Simulate a Lap</button>
+    </div>
+
+    <h3 id="lap-counter">Lap: 0 / 10</h3>
+
+    </body>
+</html>
